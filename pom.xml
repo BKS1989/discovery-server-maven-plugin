@@ -71,6 +71,7 @@
 				<configuration>
 					<imageName>${imageName}:${imageVersion}</imageName>
 					<baseImage>java:8</baseImage>
+                                        <command>["java","-jar","/${project.build.finalName}.jar"]</command>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
